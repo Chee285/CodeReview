@@ -38,6 +38,7 @@ public class UserDao {
 
 	}
 
+	//
 	public int login(String id, String pwd) {
 		Users user = new Users(id, pwd);
 		int result = 0;
@@ -45,10 +46,12 @@ public class UserDao {
 		for (int i = 0; i < users.size(); i++) {
 			if (id.equals(users.get(i).getId())) {
 				if (pwd.equals(users.get(i).getPwd()))
+					
 					result = 1;
-				break;
+				return result;
 			}
 		}
+		System.out.println(result);
 		return result;
 	}
 

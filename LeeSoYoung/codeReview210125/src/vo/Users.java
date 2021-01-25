@@ -36,12 +36,12 @@ public class Users {
 		super();
 		this.id = id;
 	}
-
-	public Users(String id, String pwd) {
-		super();
-		this.id = id;
-		this.pwd = pwd;
-	}
+//
+//	public Users(String id, String pwd) {
+//		super();
+//		this.id = id;
+//		this.pwd = pwd;
+//	}
 	public Users(String id, String option) {
 		super();
 		this.id = id;
